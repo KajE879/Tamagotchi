@@ -1,0 +1,57 @@
+body{
+    background: url(images/background.png) center no-repeat;
+    background-size: cover;
+    height: 80vh;
+    margin: 0px;
+    .container{
+        background-color: #fef7e5;
+        border: 1px solid black;  
+        max-width: 250px;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-top: 145px;
+        border-radius: 10px;
+        .screen{
+            background-color: white;
+            margin: 20px;
+            border: 1px solid black;  
+            border-radius: 5px;
+            .stats-bar{
+                background-color: white;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 4em;
+            }
+            .character{
+                img{
+                    max-width: 150px;           
+                }
+            }
+        }
+        .buttons{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 25px;
+            button{
+                border: 1px solid black;  
+                border-radius: 5px;
+                background-color: rgb(255, 255, 255);
+                transition: background-color 500ms;
+                padding: 25px;
+                &:hover{
+                    background-color: rgb(150, 150, 150);
+                    transition: background-color 500ms;
+                }
+            }
+        }
+        h1{
+            font-size: 0.9em;
+            font-family: 'Courier New', Courier, monospace;
+            color: grey;
+        }
+    }
+}
