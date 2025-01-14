@@ -10,18 +10,21 @@
     <div class="container">
         <div class="screen">
             <div class="stats-bar">
-                <div id="hunger">🍗100</div>
-                <div id="sleep">🛏️100</div>
-                <div id="fun">🛝100</div>
+                <div id="hungerDisplay">🍗100</div>
+                <div id="sleepDisplay">🛏️100</div>
+                <div id="funDisplay">🏀100</div>
             </div>
             <div class="character">
                 <img src="images/kw.jpg" alt="A tamagotchi character of kanye west">
             </div>
         </div>
         <div class="buttons">
-            <button></button>
-            <button></button>
-            <button></button>
+            <button id="increaseHungerButton"></button>
+            <audio id="increaseHungerSound" src="audio/increaseHungerSound.mp3"></audio>
+            <button id="increaseSleepButton"></button>
+            <audio id="increaseSleepSound" src="audio/increaseSleepSound.mp3"></audio>
+            <button id="increaseFunButton"></button>
+            <audio id="increaseFunSound" src="audio/increaseFunSound.mp3"></audio>
         </div>
         <h1>TAMAGOTCHI ©</h1>
     </div>
