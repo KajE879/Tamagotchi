@@ -7,6 +7,7 @@
     <title>TAMAGOTCHI</title>
 </head>
 <body>
+
     <div class="container">
         <div class="screen">
             <div class="stats-bar">
