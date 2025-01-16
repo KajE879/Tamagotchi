@@ -2,6 +2,7 @@
 let hunger = 100;
 function decreaseHunger() {
   const hungerDisplay = document.getElementById("hungerDisplay");
+  const alertDisplay = document.getElementById("alertDisplay");
   if (hunger > 0) {
     hunger--;
     hungerDisplay.innerHTML = `🍗${hunger}`;
@@ -9,15 +10,23 @@ function decreaseHunger() {
     hungerDisplay.innerHTML = "🍗X";
     clearInterval(hungerInterval);
   }
+  if (hunger < 30) {
+    alertDisplay.innerHTML = "I'm Hungry!";
+  } else {
+    alertDisplay.innerHTML = "";
+  }
 }
 function increaseHunger() {
   const hungerDisplay = document.getElementById("hungerDisplay");
-
+  const alertDisplay = document.getElementById("alertDisplay");
   hunger += 30;
   if (hunger > 100) {
     hunger = 100;
   }
   hungerDisplay.innerHTML = `🍗${hunger}`;
+  if (hunger >= 30) {
+    alertDisplay.innerHTML = "";
+  }
 }
 const increaseHungerButton = document.getElementById("increaseHungerButton");
 increaseHungerButton.addEventListener("click", increaseHunger);
@@ -39,7 +48,6 @@ function increaseSleep() {
   const sleepDisplay = document.getElementById("sleepDisplay");
 
   sleep += 20;
-  hunger -= 20;
   if (sleep > 100) {
     sleep = 100;
   }
@@ -65,8 +73,6 @@ function increaseFun() {
   const funDisplay = document.getElementById("funDisplay");
 
   fun += 20;
-  sleep -= 10;
-  hunger -= 10;
   if (fun > 100) {
     fun = 100;
   }

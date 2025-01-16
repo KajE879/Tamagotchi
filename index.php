@@ -7,7 +7,6 @@
     <title>TAMAGOTCHI</title>
 </head>
 <body>
-
     <div class="container">
         <div class="screen">
             <div class="stats-bar">
@@ -15,6 +14,7 @@
                 <div id="sleepDisplay">🛏️100</div>
                 <div id="funDisplay">🏀100</div>
             </div>
+            <div class="alertDisplay" id="alertDisplay"></div>
             <div class="character">
                 <img src="images/kw.jpg" alt="A tamagotchi character of kanye west">
             </div>

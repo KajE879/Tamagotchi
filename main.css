@@ -3,7 +3,6 @@ body{
     background-size: cover;
     height: 80vh;
     margin: 0px;
-
     .container{
         background-color: #fef7e5;
         border: 1px solid black;  
@@ -22,10 +21,14 @@ body{
             .stats-bar{
                 background-color: #ffffff;
                 display: flex;
-
                 flex-direction: row;
                 justify-content: center;
                 gap: 4em;
+            }
+            .alertDisplay{
+                color: black;
+                position: relative;
+                bottom: -32px;
             }
             .character{
                 img{
@@ -57,48 +60,3 @@ body{
         }
     }
 }
-
-body {
-    background-color: #000;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-}
-
-#hamburger-menu {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
-
-#menu-button {
-    font-size: 2em;
-    background: none;
-    border: none;
-    color: #fff;
-}
-
-#menu-content ul {
-    list-style: none;
-    padding: 0;
-}
-
-
-#game-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    display: none;
-}
-#hungerDisplay,
-#sleepDisplay,
-#funDisplay {
-    color: #000000; /* Change this to any color you prefer */
-}
-
