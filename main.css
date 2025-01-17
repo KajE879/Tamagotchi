@@ -27,8 +27,6 @@ body{
             }
             .alertDisplay{
                 color: black;
-                position: relative;
-                bottom: -32px;
             }
             .character{
                 img{

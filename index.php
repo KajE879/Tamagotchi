@@ -14,7 +14,11 @@
                 <div id="sleepDisplay">🛏️100</div>
                 <div id="funDisplay">🏀100</div>
             </div>
-            <div class="alertDisplay" id="alertDisplay"></div>
+            <div class="alertDisplay">
+                <div class="alert" id="hungerAlertDisplay"></div>
+                <div class="alert" id="sleepAlertDisplay"></div>
+                <div class="alert" id="funAlertDisplay"></div>
+            </div>
             <div class="character">
                 <img src="images/kw.jpg" alt="A tamagotchi character of kanye west">
             </div>
