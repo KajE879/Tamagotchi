@@ -30,7 +30,7 @@ function increaseHunger() {
 }
 const increaseHungerButton = document.getElementById("increaseHungerButton");
 increaseHungerButton.addEventListener("click", increaseHunger);
-const hungerInterval = setInterval(decreaseHunger, 100);
+const hungerInterval = setInterval(decreaseHunger, 2000);
 
 // Sleep
 let sleep = 100;
@@ -53,7 +53,7 @@ function decreaseSleep() {
 function increaseSleep() {
   const sleepDisplay = document.getElementById("sleepDisplay");
   const alertDisplay = document.getElementById("sleepAlertDisplay");
-  sleep += 20;
+  sleep += 60;
   if (sleep > 100) {
     sleep = 100;
   }
@@ -64,8 +64,7 @@ function increaseSleep() {
 }
 const increaseSleepButton = document.getElementById("increaseSleepButton");
 increaseSleepButton.addEventListener("click", increaseSleep);
-const sleepInterval = setInterval(decreaseSleep, 100);
-
+const sleepInterval = setInterval(decreaseSleep, 3000);
 
 // Fun
 let fun = 100;
@@ -88,7 +87,7 @@ function decreaseFun() {
 function increaseFun() {
   const funDisplay = document.getElementById("funDisplay");
   const alertDisplay = document.getElementById("funAlertDisplay");
-  fun += 20;
+  fun += 30;
   if (fun > 100) {
     fun = 100;
   }
@@ -97,11 +96,9 @@ function increaseFun() {
     alertDisplay.innerHTML = "";
   }
 }
-
 const increaseFunButton = document.getElementById("increaseFunButton");
 increaseFunButton.addEventListener("click", increaseFun);
-const funInterval = setInterval(decreaseFun, 100);
-
+const funInterval = setInterval(decreaseFun, 1000);
 
 // Audio
 const hungerButton = document.getElementById("increaseHungerButton");
