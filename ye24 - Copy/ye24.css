@@ -1,0 +1,122 @@
+body {
+    background-image: url('background 8bit.png');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#hamburgerMenu {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#menuContent {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    z-index: 1000;
+}
+
+.container {
+    background-color: #fef7e5;
+    border: 1px solid black;
+    max-width: 250px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 145px;
+    border-radius: 10px;
+}
+
+.screen {
+    background-color: white;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.stats-bar {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4em;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 28px;
+    button {
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: rgb(255, 255, 255);
+        transition: background-color 500ms;
+        padding: 25px;
+
+        &:hover {
+            background-color: rgb(150, 150, 150);
+            transition: background-color 500ms;
+        }
+    }
+}
+
+.character{
+    img{
+        max-width: 150px;
+    }
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 28px;
+}
+
+button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+
+#start-screen {
+    text-align: center;
+}
+
+#start-button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#start-button:hover {
+    background-color: #ff1493;
+}
+
+h1{
+    font-size: 20px;
+    color: black;
+}
