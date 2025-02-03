@@ -101,19 +101,40 @@ increaseFunButton.addEventListener("click", increaseFun);
 const funInterval = setInterval(decreaseFun, 1000);
 
 // Audio
-const hungerButton = document.getElementById("increaseHungerButton");
-const hungerAudio = document.getElementById("increaseHungerSound");
-hungerButton.addEventListener("click", () => {
-    hungerAudio.play();
-});
-const sleepButton = document.getElementById("increaseSleepButton");
-const sleepAudio = document.getElementById("increaseSleepSound");
-sleepButton.addEventListener("click", () => {
-    sleepAudio.play();
-});
-const funButton = document.getElementById("increaseFunButton");
-const funAudio = document.getElementById("increaseFunSound");
-funButton.addEventListener("click", () => {
-    funAudio.play();
+const music = document.getElementById('music');
+document.getElementById('start-button').addEventListener('click', () => {
+  music.play().catch(error => {
+      console.log("Muziek kan niet automatisch worden afgespeeld:", error);
+  });
+  document.getElementById('start-screen').style.display = 'none';
+  document.getElementById('game-container').style.display = 'block';
 });
 
+function toggleMusic() {
+  if (music.paused) {
+      music.play();
+  } else {
+      music.pause();
+  }
+}
+
+// Hamburger
+document.getElementById('menuButton').addEventListener('click', function() {
+  const menuContent = document.getElementById('menuContent');
+  if (menuContent.style.display === 'none' || menuContent.style.display === '') {
+      menuContent.style.display = 'block';
+  } else {
+      menuContent.style.display = 'none';
+  }
+});
+
+// Keybinds
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'ArrowRight') {
+      increaseFun();
+  } else if (event.key === 'ArrowDown') {
+      increaseSleep();
+  } else if (event.key === 'ArrowLeft') {
+      increaseHunger();
+  }
+});

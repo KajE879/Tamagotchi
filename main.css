@@ -1,8 +1,42 @@
 body{
     background: url(images/background.png) center no-repeat;
     background-size: cover;
-    height: 80vh;
-    margin: 0px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    .hamburgerMenu {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        .menuContent {
+            display: none;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 5px;
+            padding: 10px;
+            position: absolute;
+            left: 0;
+            z-index: 1000;
+        }
+    }
+    .start-screen {
+        text-align: center;
+        .start-button {
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            &:hover {
+                background-color: #ff1493;
+            }
+        }
+    }
     .container{
         background-color: #fef7e5;
         border: 1px solid black;
@@ -57,4 +91,22 @@ body{
             color: grey;
         }
     }
+}
+
+
+
+button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+h1{
+    font-size: 20px;
+    color: black;
 }
