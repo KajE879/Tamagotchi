@@ -16,6 +16,7 @@ function decreaseHunger() {
     alertDisplay.innerHTML = "";
   }
 }
+// Hunger Increase
 function increaseHunger() {
   const hungerDisplay = document.getElementById("hungerDisplay");
   const alertDisplay = document.getElementById("hungerAlertDisplay");
@@ -30,6 +31,7 @@ function increaseHunger() {
 }
 const increaseHungerButton = document.getElementById("increaseHungerButton");
 increaseHungerButton.addEventListener("click", increaseHunger);
+// Hunger Time
 const hungerInterval = setInterval(decreaseHunger, 2000);
 
 // Sleep
@@ -50,6 +52,7 @@ function decreaseSleep() {
     alertDisplay.innerHTML = "";
   }
 }
+// Sleep Increase
 function increaseSleep() {
   const sleepDisplay = document.getElementById("sleepDisplay");
   const alertDisplay = document.getElementById("sleepAlertDisplay");
@@ -64,6 +67,7 @@ function increaseSleep() {
 }
 const increaseSleepButton = document.getElementById("increaseSleepButton");
 increaseSleepButton.addEventListener("click", increaseSleep);
+// Sleep Time
 const sleepInterval = setInterval(decreaseSleep, 3000);
 
 // Fun
@@ -84,6 +88,7 @@ function decreaseFun() {
     alertDisplay.innerHTML = "";
   }
 }
+// Fun Increase
 function increaseFun() {
   const funDisplay = document.getElementById("funDisplay");
   const alertDisplay = document.getElementById("funAlertDisplay");
@@ -98,25 +103,30 @@ function increaseFun() {
 }
 const increaseFunButton = document.getElementById("increaseFunButton");
 increaseFunButton.addEventListener("click", increaseFun);
+// Fun Time
 const funInterval = setInterval(decreaseFun, 1000);
 
 // Audio
 const music = document.getElementById('music');
+const toggleMusicButton = document.getElementById('toggleMusic');
+
 document.getElementById('start-button').addEventListener('click', () => {
   music.play().catch(error => {
-      console.log("Muziek kan niet automatisch worden afgespeeld:", error);
+    console.log("Muziek kan niet automatisch worden afgespeeld:", error);
   });
   document.getElementById('start-screen').style.display = 'none';
   document.getElementById('game-container').style.display = 'block';
 });
 
-function toggleMusic() {
+// Audio Toggle Button
+toggleMusicButton.addEventListener('click', () => {
   if (music.paused) {
-      music.play();
+    music.play();
   } else {
-      music.pause();
+    music.pause();
   }
-}
+});
+
 
 // Hamburger
 document.getElementById('menuButton').addEventListener('click', function() {

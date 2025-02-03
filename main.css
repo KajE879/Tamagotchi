@@ -7,11 +7,11 @@ body{
     align-items: center;
     height: 100vh;
     margin: 0;
-    .hamburgerMenu {
+    .hamburgerMenu{
         position: absolute;
         top: 10px;
         left: 10px;
-        .menuContent {
+        .menuContent{
             display: none;
             background-color: rgba(0, 0, 0, 0.7);
             border-radius: 5px;
@@ -32,7 +32,7 @@ body{
             }
         }
     }
-    .start-screen {
+    .start-screen{
         text-align: center;
         .start-button {
             padding: 10px 20px;
@@ -103,9 +103,6 @@ body{
         }
     }
 }
-
-
-
 button {
     background-color: #ff69b4;
     color: white;
@@ -116,7 +113,6 @@ button {
     margin: 5px;
     transition: background-color 0.3s;
 }
-
 h1{
     font-size: 20px;
     color: black;
