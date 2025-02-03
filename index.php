@@ -10,7 +10,13 @@
     <div id="hamburgerMenu" class="hamburgerMenu">
         <button id="menuButton" class="menuButton">☰</button>
         <div id="menuContent" class="menuContent">
-            <button id="toggleMusic">Muziek Aan/Uit</button>
+            <button id="toggleMusic">Music On/Off</button>
+            <ul>
+                <p>Keybinds:</p>
+                <li>← Hunger</li>
+                <li>↓ Sleep</li>
+                <li>→ Fun</li>
+            </ul> 
         </div>
     </div>
     <div id="start-screen" class="start-screen">

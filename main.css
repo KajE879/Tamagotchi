@@ -19,6 +19,17 @@ body{
             position: absolute;
             left: 0;
             z-index: 1000;
+            width: 125px;
+            text-align: center;
+            ul{
+                color: white;
+                p{
+                    color: white;
+                }
+                li{
+                    color: white;
+                }
+            }
         }
     }
     .start-screen {
